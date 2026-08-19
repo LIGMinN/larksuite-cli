@@ -1,16 +1,7 @@
 name: Issue Labels
 
 on:
-  schedule:
-    - cron: '0 * * * *' # every hour
   workflow_dispatch:
-    inputs:
-      dry_run:
-        description: "Do not write labels, only print planned changes"
-        required: false
-        default: true
-        type: boolean
-
 permissions:
   contents: read
   issues: write
